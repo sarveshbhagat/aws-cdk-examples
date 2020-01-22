@@ -2,7 +2,7 @@
 
 from aws_cdk import core
 
-from dynamodb_lambda.dynamodb_lambda_stack import DynamodbLambdaStack
+from dynamodb_lambda.producer import DynamodbLambdaStack
 from dynamodb_lambda.consumer import ConsumerStack
 
 app = core.App()
