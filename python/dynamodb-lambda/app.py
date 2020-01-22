@@ -7,5 +7,6 @@ from dynamodb_lambda.dynamodb_lambda_stack import DynamodbLambdaStack
 
 app = core.App()
 DynamodbLambdaStack(app, "dynamodb-lambda")
+#env={'region': 'us-west-2'}
 
 app.synth()
