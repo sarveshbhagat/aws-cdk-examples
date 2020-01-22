@@ -13,7 +13,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
 
-    author="author",
+    author="Sarvesh Bhagat",
 
     package_dir={"": "dynamodb_lambda"},
     packages=setuptools.find_packages(where="dynamodb_lambda"),
@@ -26,7 +26,10 @@ setuptools.setup(
         "botocore"
         "aws-cdk.aws_events",
         "aws-cdk.aws_lambda_event_sources",
-        "aws-cdk.aws_events_targets"
+        "aws-cdk.aws_events_targets",
+        "aws-cdk.aws_sqs",
+        "aws_lambda_event_sources",
+        "aws_s3"
     ],
 
     python_requires=">=3.6",

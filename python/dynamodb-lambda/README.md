@@ -5,7 +5,7 @@
 Creates an AWS DynamoDB and Lambda function with the Python language bindings for CDK. Lambda function
 gets triggered from a CloudWatch event every minute.
 
-![alt text](./architecture.png "Resources created with CDK")
+![alt text](./workshop.png "Resources created with CDK")
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 

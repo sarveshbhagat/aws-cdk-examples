@@ -3,10 +3,14 @@
 from aws_cdk import core
 
 from dynamodb_lambda.dynamodb_lambda_stack import DynamodbLambdaStack
-
+from dynamodb_lambda.consumer import ConsumerStack
 
 app = core.App()
-DynamodbLambdaStack(app, "dynamodb-lambda")
-#env={'region': 'us-west-2'}
+producer = DynamodbLambdaStack(app, "producer")
+consumer = ConsumerStack(app, "consumer", table=producer.get_table())
+
+consumer.add_dependency(producer)
+
+# env={'region': 'us-west-2'}
 
 app.synth()
